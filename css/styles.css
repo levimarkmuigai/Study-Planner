@@ -1,0 +1,154 @@
+:root {
+  /* Colors */
+  --primary-color: #175480;
+  --secondary-color: #ffffff;
+  --text-color: #000000;
+  --sidebar-bg: #6A93D9;
+  --hover-color: #1ABC9C;
+  --logout-bg: #E74C3C;
+  --logout-hover: #C039;
+
+
+  /* Spacing & Layouts*/
+  --sidebar-width: 280px;
+  --card-padding: 20px;
+  --border-radius: 10px;
+
+  /* Fonts*/
+  --font-main: 'Arial', sans-serif;
+  --font-size: 16px;
+}
+
+body{
+  font-family: var(--font-main);
+  font-size: var(--font-size);
+  background-color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Aside Bar*/
+.sidebar{
+  width: var(--sidebar-width);
+  background-color: var(--sidebar-bg);
+  color: var(--text-color);
+  position: fixed;
+  left: 0;
+  top:0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding:25px 0;
+  justify-content: space-between;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  overflow: hidden;
+}
+.sidebar a:hover{
+  background-color: var(--hover-color);
+}
+
+/* Profile*/
+.profile{
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.profile img, .profile p{
+  margin-top: 10px;
+  font-weight: bold;
+}
+.profile img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile::after{
+  display: none;
+}
+
+.nav{
+  position:relative;
+  width: 100%;
+  padding-top: 30px;
+}
+
+/* Curve on Nav*/
+.nav::after{
+  content: "";
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  background-color: var(--sidebar-bg);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  box-shadow: 0px -10px 10px rgba(0,0,0,0.2);
+}
+
+/* Nav List*/
+.nav-container{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.nav-list{
+  list-style: none;
+  padding: 0;
+  width: 100%
+}
+
+.nav-list li{
+  width: 100%;
+}
+
+.nav-list li a{
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  transition: 0.3s;
+  padding: 15px 20px;
+  font-size: 18px;
+  gap: 15px;
+}
+
+.nav-list li a i{
+  font-size: 22px;
+}
+
+.nav-list li a:hover{
+  background-color: var(--hover-color);
+}
+
+/* Logout Button*/
+.logout a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--logout-bg);
+  color: white;
+  padding: 12px 0;
+  border-radius: var(--border-radius);
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.logout a:hover{
+  background-color: var(--logout-hover);
+}
+
+.logout i {
+  margin-right: 10px;
+}
+
