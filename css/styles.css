@@ -4,7 +4,7 @@
   --secondary-color: #ffffff;
   --text-color: #000000;
   --sidebar-bg: #6A93D9;
-  --hover-color: #1ABC9C;
+  --hover-color: #175480;
   --logout-bg: #E74C3C;
   --logout-hover: #C039;
 
@@ -51,18 +51,28 @@ body{
 .profile{
   text-align: center;
   margin-bottom: 40px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.profile img, .profile p{
-  margin-top: 10px;
+.profile p{
+  margin: 0;
   font-weight: bold;
 }
+
 .profile img{
   width: 80px;
-  height: 80px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  
+  margin-bottom: 10px;
 }
 
 /* Nav List*/
@@ -110,4 +120,10 @@ body{
 }
 
 
-
+/* Active js class*/
+.active {
+  color: white;
+  background-color: var(--primary-color);
+  padding: 5px;
+  border-radius: 5px;
+}
