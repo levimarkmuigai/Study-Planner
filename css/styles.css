@@ -19,6 +19,10 @@
   --font-size: 16px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: var(--font-main);
   font-size: var(--font-size);
@@ -40,7 +44,7 @@ body{
   flex-direction: column;
   height: 100vh;
   border-top-right-radius:var(--border-radius);
-  border-bottom-left: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
   padding-top: 20px;
 }
 .sidebar a:hover{
@@ -119,11 +123,24 @@ body{
   border-radius: 10px;
 }
 
+/* Section */
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+}
 
-/* Active js class*/
-.active {
-  color: white;
+/* Active */
+.nav-list a.active{
   background-color: var(--primary-color);
-  padding: 5px;
+  color: var(--secondary-color);
   border-radius: 5px;
+}
+
+/* Main Section*/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
 }
