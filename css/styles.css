@@ -6,7 +6,7 @@
   --sidebar-bg: #6A93D9;
   --hover-color: #175480;
   --hover-box-color: #6A93D9;
-  --ring-color: rgba(0, 255, 255, 0.8);
+  --ring-color: rgba(0, 0, 0, 0.7);
 
 
   /* Spacing & Layouts*/
@@ -197,20 +197,21 @@ h1 {
 }
 
 /* Adding Ring Effect*/
-.info-box.hover-effect {
+.info-box:hover-effect {
   background-color: var(--hover-box-color);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
 }
 
 /* Info Box Before*/
-.info-box.hover-effect::before{
+.info-box:hover::before{
   content: "";
   position: absolute;
-  top: -2.5px;
-  left: -2.5px;
-  right: -2.5px;
-  bottom: -2.5px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px var(--ring-color);
+  top: -1.5px;
+  left: -1.5px;
+  right: -1.5px;
+  bottom: -1.5px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--ring-color);
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
   pointer-events: none;
@@ -225,13 +226,13 @@ h1 {
 /*Keyframe Pulse*/
 @keyframes pulse {
   0% {
-  box-shadow: 0 0 10px var(--ring-color);
+  box-shadow: 0 0 12px var(--ring-color);
   }
   50% {
   box-shadow: 0  0 20px var(--ring-color);
   }
   100%{
-  box-shadow:0 0 10px var(--ring-color) ;
+  box-shadow:0 0 12px var(--ring-color) ;
   }
 }
 /* Header Section With Icon*/
