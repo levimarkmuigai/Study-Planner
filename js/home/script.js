@@ -3,6 +3,7 @@ console.log("Script loaded successfully!!");
 
 // Name Changer
 document.addEventListener("DOMContentLoaded", () => {
+  
   // Select elements containing the username
   const userNameElement = document.querySelector(".profile p");
 
@@ -45,3 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const boxes = document.querySelectorAll(".info-box");
+
+  boxes.forEach(box => {
+    box.addEventListener("mouseenter", () => {
+      box.classList.add("hover-effect");
+    });
+
+    box.addEventListener("mouseleave", () => {
+      box.classList.remove("hover-effect");
+    });
+  });
+});
