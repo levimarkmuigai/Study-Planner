@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Get the target section's ID from href
       const targetId = event.currentTarget.getAttribute("href");
 
-      if (targetId.startwith("#")) {
+      if (targetId && targetId.startsWith("#")) {
 
         const targetSection = document.querySelector(targetId);
 
