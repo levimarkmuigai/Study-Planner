@@ -206,12 +206,8 @@ h1 {
 .info-box:hover::before{
   content: "";
   position: absolute;
-  top: -1.5px;
-  left: -1.5px;
-  right: -1.5px;
-  bottom: -1.5px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px var(--ring-color);
+  border-radius:  var(--border-radius);
+  box-shadow: 0 0 7px var(--ring-color);
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
   pointer-events: none;
@@ -219,20 +215,20 @@ h1 {
 
 /*Info box before hover*/
 .box.hover-effect::before{
-  opacity: 1;
+  opacity: 0;
   animation: pulse 1.5s infinite ease-in-out;
 }
 
 /*Keyframe Pulse*/
 @keyframes pulse {
   0% {
-  box-shadow: 0 0 12px var(--ring-color);
+  box-shadow: 0 0 5px var(--ring-color);
   }
   50% {
-  box-shadow: 0  0 20px var(--ring-color);
+  box-shadow: 0  0 12px var(--ring-color);
   }
   100%{
-  box-shadow:0 0 12px var(--ring-color) ;
+  box-shadow:0 0 5px var(--ring-color) ;
   }
 }
 /* Header Section With Icon*/
