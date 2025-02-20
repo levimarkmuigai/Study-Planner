@@ -205,10 +205,10 @@ h1 {
 .info-box.hover-effect::before{
   content: "";
   position: absolute;
-  top: -3.5px;
-  left: -3.5px;
-  right: -3.5px;
-  bottom: -3.5px;
+  top: -2.5px;
+  left: -2.5px;
+  right: -2.5px;
+  bottom: -2.5px;
   border-radius: 15px;
   box-shadow: 0 0 10px var(--ring-color);
   opacity: 1;
