@@ -150,30 +150,30 @@ section {
   border-radius: 5px;
 }
 
-/* Main Section*/
-main {
-  padding: 20px;
-  flex-direction: column;
+main{
   display: grid;
-  place-items: center;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-  margin-left: var(--sidebar-width);
   gap: 40px;
 }
-
 h1 {
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
-  margin-top: -275px;
-  margin-left: -900px;
-  margin-bottom: 20px;
+  margin-left: var(--sidebar-width);
+  margin-bottom: 20px auto;
   color: var(--text-color);
 }
 
-
+/*Info-Container config*/
+.info-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  padding: 20px;
+  max-width: 600px;
+}
 /* Styling small info boxes*/
 .info-box {
   width: var(--box-width);
@@ -182,15 +182,14 @@ h1 {
   color: var(--text-color);
   border-radius: var(--border-radius);
   padding: var(--padding);
-  margin: 20px auto;
+  width: 200px;
   display: flex;
   position: relative;
-  margin-top: -450px;
-  margin-left: -600px;
   text-align: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center; 
   justify-content: center;
+  margin: 20px;
   box-shadow: var(--shadow-normal);
   transition: transform var(--transition-speed) ease-in-out,
               box-shadow var(--transition-speed) ease-in-out;
@@ -203,7 +202,7 @@ h1 {
 }
 
 /* Info Box Before*/
-.info-box:hover::before{
+.info-box:hover-effect::before{
   content: "";
   position: absolute;
   border-radius:  var(--border-radius);
