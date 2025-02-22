@@ -188,8 +188,8 @@ grid-gap: 20px;
 }
 
 /* Specifying Large boxes positions*/
-.large-left{
-  grid-column: 1 / span 2;
+.large-right{
+  grid-column: 2 / span 2;
 }
 
 .large-bottom-1{
