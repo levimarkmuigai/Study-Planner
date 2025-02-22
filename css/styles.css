@@ -16,6 +16,8 @@
   --box-width: 200px;
   --box-height: 120px;
   --box-radius: 10px;
+  --large-box-width: calc(var(--box-width) * 2 + 40px);
+  --large-box-height: calc(var(--box-height) * 1.5);
   --padding: 15px;
 
   /* Typography*/
