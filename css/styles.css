@@ -167,7 +167,7 @@ h1 {
 
 /*Info-Container config*/
 .info-container{
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -179,20 +179,34 @@ h1 {
   max-width: 600px;
 }
 
-/* Large boxes*/
+/*Large-box Container config*/
+.large-container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto auto;
+grid-gap: 20px;
+}
+
+/* Specifying Large boxes positions*/
+.large-left{
+  grid-column: 1 / span 2;
+}
+
+.large-bottom-1{
+  grid-column: 1;
+}
+
+.large-bottom-2{
+  grid-column: 2;
+}
 
 /* Styling small info boxes*/
-.info-box {
-  
-  height: var(--box-height);
+.large-box, .info-box {
   background-color: var(--primary-color);
   color: var(--text-color);
   border-radius: var(--border-radius);
   padding: var(--padding);
-  width: 200px;
   display: flex;
-  position: relative;
-  text-align: center;
   flex-direction: column;
   align-items: center; 
   justify-content: center;
@@ -200,6 +214,16 @@ h1 {
   box-shadow: var(--shadow-normal);
   transition: transform var(--transition-speed) ease-in-out,
               box-shadow var(--transition-speed) ease-in-out;
+}
+/* small box config */
+.info-box{
+  width: var(--box-width);
+  height: var(--box-height);
+}
+
+.large-box{
+  width: var(--large-box-width);
+  height: var(--large-box-height);
 }
 
 /* Adding Ring Effect*/
