@@ -167,6 +167,7 @@ h1 {
 .info-container{
   display: flex;
   flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   align-items: center;
   justify-content: flex-start;
@@ -175,9 +176,16 @@ h1 {
   padding: 20px;
   max-width: 600px;
 }
+
+/* Large boxes*/
+.Large-box{
+  width: calc(var(--box-width) *2 + 20px);
+  height: var(--box-height);
+  margin-left: var(--sidebar-width);
+}
 /* Styling small info boxes*/
-.info-box {
-  width: var(--box-width);
+.Large-box, .info-box {
+  
   height: var(--box-height);
   background-color: var(--primary-color);
   color: var(--text-color);
