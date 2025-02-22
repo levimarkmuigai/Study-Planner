@@ -157,7 +157,7 @@ main{
 h1 {
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
-  margin-left: var(--sidebar-width);
+  margin-left: 200px;
   margin-top: 20px;
   margin-bottom: 10px;
   color: var(--text-color);
