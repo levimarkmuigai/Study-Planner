@@ -178,13 +178,9 @@ h1 {
 }
 
 /* Large boxes*/
-.Large-box{
-  width: calc(var(--box-width) *2 + 20px);
-  height: var(--box-height);
-  margin-left: var(--sidebar-width);
-}
+
 /* Styling small info boxes*/
-.Large-box, .info-box {
+.info-box {
   
   height: var(--box-height);
   background-color: var(--primary-color);
