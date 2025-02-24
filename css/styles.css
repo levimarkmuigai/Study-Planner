@@ -172,7 +172,7 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   margin-left: var(--sidebar-width);
   width: 90%;
   padding: 20px;
@@ -181,10 +181,13 @@ h1 {
 
 /*Large-box Container config*/
 .large-container{
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: auto auto;
-grid-gap: 20px;
+  display: grid;
+  flex-wrap: relative;
+  justify-content: center;
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
 }
 
 /* Specifying Large boxes positions*/
@@ -194,10 +197,12 @@ grid-gap: 20px;
 
 .large-bottom-1{
   grid-column: 1;
+  grid-row: 2;
 }
 
 .large-bottom-2{
   grid-column: 2;
+  grid-row:2;
 }
 
 /* Styling small info boxes*/
@@ -217,6 +222,7 @@ grid-gap: 20px;
 }
 /* small box config */
 .info-box{
+  position: relative;
   width: var(--box-width);
   height: var(--box-height);
 }
@@ -227,7 +233,7 @@ grid-gap: 20px;
 }
 
 /* Adding Ring Effect*/
-.info-box:hover-effect {
+.info-box:hover{
   background-color: var(--hover-box-color);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
 }
@@ -244,7 +250,7 @@ grid-gap: 20px;
 }
 
 /*Info box before hover*/
-.box.hover-effect::before{
+info-box.hover-effect::before{
   opacity: 0;
   animation: pulse 1.5s infinite ease-in-out;
 }
