@@ -239,19 +239,21 @@ h1 {
 }
 
 /* Info Box Before*/
-.info-box:hover-effect::before{
+.info-box::before{
   content: "";
   position: absolute;
+  width: 100%;
+  height: 100%;
   border-radius:  var(--border-radius);
   box-shadow: 0 0 7px var(--ring-color);
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.2s ease-in-out;
   pointer-events: none;
 }
 
 /*Info box before hover*/
-info-box.hover-effect::before{
-  opacity: 0;
+info-box:hover::before{
+  opacity: 1;
   animation: pulse 1.5s infinite ease-in-out;
 }
 
