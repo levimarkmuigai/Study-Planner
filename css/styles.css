@@ -165,6 +165,12 @@ h1 {
   color: var(--text-color);
 }
 
+
+/* Container for All Boxes*/
+.Container{
+  display: grid;
+  flex-wrap: wrap;
+}
 /*Info-Container config*/
 .info-container{
   display: grid;
