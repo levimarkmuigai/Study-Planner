@@ -6,7 +6,7 @@
   --sidebar-bg: #6A93D9;
   --hover-color: #175480;
   --hover-box-color: #6A93D9;
-  --ring-color: rgba(0, 0, 0, 0.7);
+  --ring-color: rgba(0, 80, 80, 0.7);
 
 
   /* Spacing & Layouts*/
@@ -164,58 +164,25 @@ h1 {
   margin-bottom: 10px;
   color: var(--text-color);
 }
-
-
-/* Container for All Boxes*/
-.Container{
+/* Card Container*/
+.container{
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: 
-      "small large"
-      "bottom bottom";
-  gap: 20px;
+  grid-template-columns: repeat(1, 2fr);
+  margin-left: 300px;
   justify-content: center;
   align-items: center;
-  padding-left: var(--sidebar-width);
-  max-width: 90%;
-  margin-left: var(--sidebar-width);
 }
 /*Info-Container config*/
-.info-container{
+.info-container {
   display: grid;
-  grid-area: small;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   align-items: center;
   justify-content: center;
-  margin-left: var(--sidebar-width);
-  width: 90%;
   padding: 20px;
   max-width: 600px;
-}
-
-/*Large-box Container config*/
-.large-container{
-  display: grid;
-  flex-wrap: relative;
-  justify-content: center;
-  margin: auto;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
-}
-
-/* Specifying Large boxes positions*/
-.large-right{
-  grid-area: large;
-}
-
-.large-bottom-1{
-  grid-area: bottom;
-}
-
-.large-bottom-2{
-  grid-area: bottom;
+  margin-left: var(--sidebar-width);
+  margin-right: 10px;
 }
 
 /* Styling small info boxes*/
@@ -233,6 +200,7 @@ h1 {
   transition: transform var(--transition-speed) ease-in-out,
               box-shadow var(--transition-speed) ease-in-out;
 }
+
 /* small box config */
 .info-box{
   position: relative;
@@ -240,15 +208,18 @@ h1 {
   height: var(--box-height);
 }
 
+
 .large-box{
   width: var(--large-box-width);
   height: var(--large-box-height);
+  grid-area: 1 /-1;
+  
 }
 
 /* Adding Ring Effect*/
 .info-box:hover{
   background-color: var(--hover-box-color);
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 25px rgba(0, 125, 125, 0.9);
 }
 
 /* Info Box Before*/
@@ -262,6 +233,11 @@ h1 {
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
   pointer-events: none;
+}
+
+.info-box:hover::before {
+  opacity: 1;
+  animation: pulse 1.5s infinite ease-in-out;
 }
 
 /*Info box before hover*/
