@@ -169,21 +169,22 @@ h1 {
 /* Container for All Boxes*/
 .Container{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: auto auto auto;
   grid-template-areas: 
-      "large small"
+      "small large"
       "bottom bottom";
   gap: 20px;
   justify-content: center;
   align-items: center;
   padding-left: var(--sidebar-width);
   max-width: 90%;
-  margin: auto;
+  margin-left: var(--sidebar-width);
 }
 /*Info-Container config*/
 .info-container{
   display: grid;
+  grid-area: small;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   align-items: center;
@@ -206,17 +207,15 @@ h1 {
 
 /* Specifying Large boxes positions*/
 .large-right{
-  grid-column: 2 / span 2;
+  grid-area: large;
 }
 
 .large-bottom-1{
-  grid-column: 1;
-  grid-row: 2;
+  grid-area: bottom;
 }
 
 .large-bottom-2{
-  grid-column: 2;
-  grid-row:2;
+  grid-area: bottom;
 }
 
 /* Styling small info boxes*/
@@ -266,7 +265,7 @@ h1 {
 }
 
 /*Info box before hover*/
-info-box:hover::before{
+.info-box:hover::before{
   opacity: 1;
   animation: pulse 1.5s infinite ease-in-out;
 }
