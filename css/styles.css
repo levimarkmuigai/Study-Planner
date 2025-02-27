@@ -169,12 +169,21 @@ h1 {
 /* Container for All Boxes*/
 .Container{
   display: grid;
-  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+      "large small"
+      "bottom bottom";
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-left: var(--sidebar-width);
+  max-width: 90%;
+  margin: auto;
 }
 /*Info-Container config*/
 .info-container{
   display: grid;
-  flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   align-items: center;
@@ -191,8 +200,7 @@ h1 {
   flex-wrap: relative;
   justify-content: center;
   margin: auto;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
   grid-gap: 20px;
 }
 
