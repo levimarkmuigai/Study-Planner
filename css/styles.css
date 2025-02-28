@@ -168,7 +168,7 @@ h1 {
 .container{
   display: grid;
   grid-template-columns: repeat(1, 2fr);
-  margin-left: 300px;
+  margin-left: calc((--sidebar-width) + 20px);
   justify-content: center;
   align-items: center;
 }
