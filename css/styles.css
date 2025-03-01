@@ -1,8 +1,8 @@
 :root {
   /* Colors */
   --primary-color: #175480;
-  --secondary-color: #FFFF;
-  --text-color: #000000;
+  --secondary-color: #EAE0C8;
+  --text-color: #FFFF;
   --sidebar-bg: #6A93D9;
   --hover-color: #175480;
   --hover-box-color: #6A93D9;
@@ -51,7 +51,7 @@ body{
 .sidebar{
   width: var(--sidebar-width);
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: #FFFF;
   position: fixed;
   left: 0;
   top:0;
@@ -145,13 +145,15 @@ section {
   min-height: 100vh;
 }
 
-/* Active */
+/****************** Active Link************/
 .nav-list a.active{
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 5px;
 }
 
+
+/*************  Main Section**************/
 main{
   display: grid;
   gap: 40px;
@@ -162,7 +164,7 @@ main{
   margin-left: 200px;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: var(--text-color);
+  color: #000;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
