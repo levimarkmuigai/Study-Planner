@@ -228,20 +228,20 @@ h1 {
 }
 
 /*Hover for large box*/
-.large-box{
+.large-box:hover{
   transform: translateY(5px);
   box-shadow: var(--shadow-hover);
   background-color: var(--hover-box-color);
 }
 
 /* ------------------Adding Ring Effect----------------*/
-.info-box:hover{
+.info-box:hover, .large-box:hover{
   background-color: var(--hover-box-color);
   box-shadow: 0 0 25px rgba(31, 46, 159, 0.9);
 }
 
 /* Info Box Before*/
-.info-box::before{
+.info-box::before, .large-box::before{
   content: "";
   position: absolute;
   width: 100%;
