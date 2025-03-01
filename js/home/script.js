@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+// Adding the Pulsating Ring Effect to the Boxes
 document.addEventListener("DOMContentLoaded", () => {
   const boxes = document.querySelectorAll(".info-box");
 
