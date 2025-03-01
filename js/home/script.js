@@ -62,6 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 500); // 2-Second delay
     }
   }
+  // Initial Welcome Message after 2seconds
+  setTimeout(showWelcomeMessage, 2000);
+
+  // Repeat the effect every 1.5 minutes
+  setInterval(showWelcomeMessage, 10000);
 });
 
 
