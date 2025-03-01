@@ -6,7 +6,7 @@
   --sidebar-bg: #6A93D9;
   --hover-color: #175480;
   --hover-box-color: #6A93D9;
-  --ring-color: rgba(0, 80, 80, 0.7);
+  --ring-color: rgba(65, 127, 182, 0.955);
 
 
   /* Spacing & Layouts*/
@@ -222,7 +222,7 @@ h1 {
 /* Adding Ring Effect*/
 .info-box:hover{
   background-color: var(--hover-box-color);
-  box-shadow: 0 0 25px rgba(0, 125, 125, 0.9);
+  box-shadow: 0 0 25px rgba(31, 46, 159, 0.9);
 }
 
 /* Info Box Before*/
