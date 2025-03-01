@@ -53,12 +53,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Select the dashboard welcome element
   const dashboardWelcome = document.getElementById("dashboard-welcome");
 
-  if (dashboardWelcome){
-    // Delay before the message
-    setTimeout(() => {
-    dashboardWelcome.innerText = `Welcome to your Dashboard, ${userName}!`;
-    dashboardWelcome.classList.add("show");
-    }, 2000); // 2-Second delay
+  function showWelcomeMessage(){
+    if (dashboardWelcome){
+      // Delay before the message
+      setTimeout(() => {
+      dashboardWelcome.innerText = `Welcome to your Dashboard, ${userName}!`;
+      dashboardWelcome.classList.add("show");
+      }, 500); // 2-Second delay
+    }
   }
 });
 
