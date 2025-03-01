@@ -156,15 +156,20 @@ main{
   display: grid;
   gap: 40px;
 }
-h1 {
+#dashboard-welcome {
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
   margin-left: 200px;
   margin-top: 20px;
   margin-bottom: 10px;
   color: var(--text-color);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
+#dashboard-welcome.show{
+  opacity: 1;
+}
 
 /* Card Container*/
 .container{

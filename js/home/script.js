@@ -7,9 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // Select elements containing the username
   const userNameElement = document.querySelector(".profile p");
 
+  // Default username
+  let userName = "John Doe"
+  
   // Change the innerText
   if (userNameElement){
   userNameElement.innerText = "Hi, Developer!";
+  userName = userNameElement.innerText.replace("Hi, ", "").trim();
   }
 
   // Handling Navigation Link Clicks and Smooth Scrolling 
@@ -44,6 +48,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // *******Loading Dashboard Welcome Dynamically********
+  // Select the dashboard welcome element
+  const dashboardWelcome = document.getElementById("dashboard-welcome");
+
+  if (dashboardWelcome){
+    // Delay before the message
+    setTimeout(() => {
+    dashboardWelcome.innerText = `Welcome to your Dashboard, ${userName}!`;
+    dashboardWelcome.classList.add("show");
+    }, 2000); // 2-Second delay
+  }
 });
 
 
