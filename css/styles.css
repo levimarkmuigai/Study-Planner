@@ -219,6 +219,16 @@ h1 {
   
 }
 
+/* Hover effect*/
+.info-box:hover{
+  transform: translateY(5px);
+  box-shadow: var(--shadow-hover);
+  background-color: var(--hover-box-color);
+}
+
+/* Large Box Hover*/
+
+
 /* Adding Ring Effect*/
 .info-box:hover{
   background-color: var(--hover-box-color);
@@ -238,7 +248,7 @@ h1 {
   pointer-events: none;
 }
 
-.info-box:hover::before {
+.info-box:hover::before{
   opacity: 1;
   animation: pulse 1.5s infinite ease-in-out;
 }
@@ -274,11 +284,4 @@ h1 {
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
   text-align: center;
-}
-
-/* Hover effect*/
-.info-box:hover {
-  transform: translateY(5px);
-  box-shadow: var(--shadow-hover);
-  background-color: var(--hover-box-color);
 }
