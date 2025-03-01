@@ -148,7 +148,7 @@ section {
 /****************** Active Link************/
 .nav-list a.active{
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: #C2B280;
   border-radius: 5px;
 }
 
