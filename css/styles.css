@@ -164,11 +164,13 @@ h1 {
   margin-bottom: 10px;
   color: var(--text-color);
 }
+
+
 /* Card Container*/
 .container{
   display: grid;
   grid-template-columns: repeat(1, 2fr);
-  margin-left: calc((--sidebar-width) + 20px);
+  margin-left: calc(var(--sidebar-width) + 20px);
   justify-content: center;
   align-items: center;
 }
