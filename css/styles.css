@@ -294,3 +294,32 @@ main{
   font-weight: var(--font-weight-bold);
   text-align: center;
 }
+
+/***************Rating Ring**************/
+.rating-box {
+  text-align: left;
+  justify-content: center;
+}
+
+.rating-ring{
+  display: flex;
+  position: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(var(--ring-color) 0deg, var(--hover-box-color) 0deg);
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.rating-ring::before{
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}

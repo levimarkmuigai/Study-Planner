@@ -106,3 +106,31 @@ function updateTime() {
 
 // Start updating the time every 1000seconds
 setInterval(updateTime, 1000);
+
+// This is the logic for the Rating Box
+document.addEventListener("DOMContentLoaded", function () {
+  const minutesSpent = 40000; 
+
+  function getRating(minutes){
+    const hours = minutes / 60;
+    if(hours >= 1720) return {grade: "S", percent: 100 };
+    if(hours >= 1376) return {grade: "A", percent: ((hours - 1376) / 344) * 100  };
+    if(hours >= 1032) return {grade: "B", percent: ((hours - 1032) / 344) * 100  };
+    if(hours >= 688) return {grade: "C", percent: ((hours - 688) / 344) * 100  };
+    if(hours >= 344) return {grade: "D", percent:  ((hours - 344) / 344) * 100 };
+    if(hours >= 343) return {grade: "E", percent: ((hours - 343) / 344) * 100};
+
+  }
+
+  const { grade, percent } = getRating(minutesSpent);
+  const degree = (percent / 100) * 360;
+
+  const ratingBox = document.querySelector(".rating-box");
+
+  ratingBox.innerHTML = `
+    <h2 style="position: left; ">Your rating</h2>
+    <div class="rating-ring" style="background: conic-gradient(var(--ring-color) ${degree}deg, var(--hover-box-color) ${degree}deg);">
+      <span style="position: right; z-index: 2;">${grade}</span>
+    </div>
+    `;
+});
