@@ -84,3 +84,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+//Selecting the Time-Spent Element
+const timeElement = document.getElementById("time-invested");
+
+// Retrieve stored time (if any)
+let timeSpent = parseInt(localStorage.getItem("timeSpent")) || 0;
+
+// Function to update the timer by the second
+function updateTime() {
+  timeSpent ++; // Increament the time 
+
+  // Convert the seconds to hours and minutes
+  let hours = Math.floor(timeSpent / 3600);
+  let minutes = Math.floor((timeSpent / 3600) % 60);\
+  let displayTime = `{hours}Hrs {minutes}Min`;
+
+  // Update the displayed time
+  timeElement.textContent = displayTime
+}
+
+// Start updating the time every 1000seconds
+setInterval(updateTime, 1000);
