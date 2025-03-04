@@ -204,7 +204,7 @@ main{
   padding: var(--padding);
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: center; 
   justify-content: center;
   margin: 20px;
   box-shadow: var(--shadow-normal);
@@ -217,14 +217,8 @@ main{
   position: relative;
   width: var(--box-width);
   height: var(--box-height);
-
 }
 
-/* info-content*/
-.info-content{
-  margin-left: 5px;
-
-}
 
 .large-box{
   width: var(--large-box-width);
