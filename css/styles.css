@@ -213,11 +213,11 @@ main{
 }
 
 /* small box config */
-.info-box{
+/*.info-box{
   position: relative;
   width: var(--box-width);
   height: var(--box-height);
-}
+}*/
 
 
 .large-box{
