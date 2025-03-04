@@ -97,8 +97,8 @@ function updateTime() {
 
   // Convert the seconds to hours and minutes
   let hours = Math.floor(timeSpent / 3600);
-  let minutes = Math.floor((timeSpent / 3600) % 60);\
-  let displayTime = `{hours}Hrs {minutes}Min`;
+  let minutes = Math.floor((timeSpent % 3600) / 60);
+  let displayTime = `${hours}Hrs ${minutes}Min`;
 
   // Update the displayed time
   timeElement.textContent = displayTime
