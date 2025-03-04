@@ -212,14 +212,6 @@ main{
               box-shadow var(--transition-speed) ease-in-out;
 }
 
-/* small box config */
-/*.info-box{
-  position: relative;
-  width: var(--box-width);
-  height: var(--box-height);
-}*/
-
-
 .large-box{
   width: var(--large-box-width);
   height: var(--large-box-height);
@@ -298,7 +290,7 @@ main{
 /***************Rating Ring**************/
 .rating-box {
   text-align: left;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .rating-ring{
@@ -307,7 +299,6 @@ main{
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: conic-gradient(var(--ring-color) 0deg, var(--hover-box-color) 0deg);
   justify-content: center;
   align-items: center;
   font-size: 24px;
@@ -322,4 +313,10 @@ main{
   height: 65px;
   background-color: var(--primary-color);
   border-radius: 50%;
+}
+
+.rating-ring span{
+  position: relative;
+  z-index: 2;
+  font-size: 1.2rem;
 }

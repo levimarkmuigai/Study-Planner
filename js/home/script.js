@@ -125,12 +125,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const { grade, percent } = getRating(minutesSpent);
   const degree = (percent / 100) * 360;
 
-  const ratingBox = document.querySelector(".rating-box");
+  const ratingRing = document.querySelector(".rating-ring");
+  const gradeText = document.getElementById("gradeText")
 
-  ratingBox.innerHTML = `
-    <h2 style="position: left; ">Your rating</h2>
-    <div class="rating-ring" style="background: conic-gradient(var(--ring-color) ${degree}deg, var(--hover-box-color) ${degree}deg);">
-      <span style="position: right; z-index: 2;">${grade}</span>
-    </div>
-    `;
+ // Apply styles dynamically
+ratingRing.style.background = `conic-gradient(var(--ring-color) ${degree}deg, var(--hover-box-color) ${degree}deg)`;
+gradeText.textContent = grade;
+
 });
