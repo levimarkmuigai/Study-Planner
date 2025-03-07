@@ -9,20 +9,23 @@
 <body>
     <div class="container">
         <h2>Insert Units</h2>
-        <div class="form-group">
-            <label for="unit">Add Unit:</label>
-            <input type="text" id="unit" placeholder="Enter unit name">
-        </div>
-        <div class="form-group">
-            <label for="priority">Set Priority:</label>
-            <select id="priority">
-                <option value="easy">Easy (Low Priority)</option>
-                <option value="medium">Medium (Medium Priority)</option>
-                <option value="hard">Hard (High Priority)</option>
-            </select>
-        </div>
+        <form>
+            <div class="form-group">
+                <label for="unit">Add Unit:</label>
+                <input type="text" id="unit" placeholder="Enter unit name">
+            </div>
+            <div class="form-group">
+                <label for="priority">Set Priority:</label>
+                <select id="priority">
+                    <option value="easy">Easy (Low Priority)</option>
+                    <option value="medium">Medium (Medium Priority)</option>
+                    <option value="hard">Hard (High Priority)</option>
+                </select>
+            </div>
+        <button type="submit" id="add-unit">Add Unit</button>
+        </form>
 
-        <h3>Units Grid</h3>
+        <h3>Units</h3>
         <div class="grid-container">
             <div class="grid-item">Unit 1</div>
             <div class="grid-item">Unit 2</div>
@@ -34,4 +37,7 @@
         </div>
     </div>
 </body>
+
+<!--Js Link-->
+<script src="../js/insert.js"></script>
 </html>

@@ -57,6 +57,21 @@ input:focus, select:focus{
     outline: 2px solid var(--accent-color);
 }
 
+#add-unit{
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition-speed);
+}
+
+#add-unit:hover{
+    background-color: var(--hover-color);
+}
+
 /******Grid Styles*******/
 .grid-container {
     display: grid;
