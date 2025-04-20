@@ -2,6 +2,14 @@
 :root{
     --bg-primary: #0e0e0e;
     --text-color: #f4f4f4;
+    --bg-container: #D9D9D9;
+    --bg-secondary: #f4f4f4;
+}
+
+.darkmode{
+    --text-color: #0e0e0e;
+    --bg-secondary: #3c3c3c;
+    --bg-container: #999999;
 }
 
 body{
@@ -17,19 +25,22 @@ main{
     gap: 20px;
 }
 
+
+
 .genre{
    display: flex;
    justify-content: space-evenly;
    align-items: center;
-   background-color: var(--text-color);
+   background-color: var(--bg-secondary);
    color: var(--bg-primary);
    width: 525px;
    height: 450px;
    border-radius: 20px;
+   margin: 30px;
 }
 
 .book-container{
-   background-color: #D9D9D9;
+   background-color: var(--bg-container);
    width: 155px;
    height: 400px;
    margin-top: 20px;
@@ -48,4 +59,27 @@ main{
     border-radius: 20px;
 }
 
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#theme-switch svg{
+    fill: #3c3c3c;
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: inline;
+}
