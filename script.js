@@ -5,17 +5,17 @@
                             {
                             image: "Dune.jpeg", 
                             title: "Dune", 
-                            desc: "description"
+                            desc: "Noble Paul Atreides navigates Arrakis’s deadly desert politics, Fremen prophecy, and empire‑shaking cosmic spice conflicts."
                             },
                             {
                             image: "ThreeBodyProblem.jpeg", 
                             title: "Three-body Problem", 
-                            desc: "description"
+                            desc: "In Mao‑era China, scientist Ye Wenjie contacts Trisolaran aliens, triggering global scientific and existential crisis."
                             },
                             {
                             image: "Neuromancer.jpeg",
                             title: "Neuromancer", 
-                            desc: "description"
+                            desc: "Ex‑jacked hacker Case joins Molly, diving into cyberspace’s matrix under corporate and AI‑driven deadly manipulations."
                             }
                         ] 
                     },
@@ -25,17 +25,17 @@
                             {
                             image: "HarryPotter.jpeg",
                             title: "Harry Potter",
-                            desc: "description",
+                            desc: "Young orphan Harry Potter discovers wizarding world at Hogwarts, makes friends, and confronts dark wizardry.",
                             },
                             {
                             image: "Fire&Blood.jpeg",
                             title: "Fire and Blood",
-                            desc: "description",
+                            desc: "Targaryen dynasty’s rise and ruin unfold through dragon‑fueled wars, political intrigue, and treacherous familial betrayals.",
                             },
                             {
-                            image: "ThreeBodyProblem.jpeg",
-                            title: "Three Body Problem",
-                            desc: "description",
+                            image: "the-colour-of-magic.jpg",
+                            title: "Color of Magic",
+                            desc: "Clumsy wizard Rincewind and tourist Twoflower embark on chaotic Discworld adventures overflowing with satirical absurdity.",
                             }
                         ]
                     }

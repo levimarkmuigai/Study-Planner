@@ -1,19 +1,20 @@
 /*********** Root variable ********/
 :root{
     --bg-primary: #0e0e0e;
-    --text-color: #f4f4f4;
+    --text-color: #0e0e0e;
     --bg-container: #D9D9D9;
     --bg-secondary: #f4f4f4;
 }
 
 .darkmode{
-    --text-color: #0e0e0e;
+    --text-color: #e8e8e8;
     --bg-secondary: #3c3c3c;
-    --bg-container: #999999;
+    --bg-container: #0e0e0e;
 }
 
 body{
-    background-color: var(--bg-primary); 
+    background-color: var(--bg-primary);
+    color: var(--text-color); 
 }
 
 main{
@@ -31,18 +32,18 @@ main{
    display: flex;
    justify-content: space-evenly;
    align-items: center;
-   background-color: var(--bg-secondary);
-   color: var(--bg-primary);
+   background-color: var(--bg-secondary); 
    width: 525px;
-   height: 450px;
+   height: 500px;
    border-radius: 20px;
    margin: 30px;
 }
 
 .book-container{
    background-color: var(--bg-container);
+   color: var(--text-color);
    width: 155px;
-   height: 400px;
+   height: 450px;
    margin-top: 20px;
    border-radius: 20px;
 }
